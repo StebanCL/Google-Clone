@@ -21,6 +21,8 @@ This project is for **non-commercial, educational purposes only**.
 * All brand assets and trademarks belong to their respective owners.
 * No copyright infringement is intended.
 * This is a conceptual replica intended to demonstrate front-end development skills.
+> **Note:** This project is currently not responsive and is optimized for desktop viewing.
 
 ---
 **Developed by StebanCL** *Building and learning through the lens of Vibecoding.*
+Page: https://stebancl.github.io/Google-Clone/
