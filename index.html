@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <link rel="icon" href="https://imagepng.org/wp-content/uploads/2019/08/google-icon-1.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-right">
+                <li><a href="https://mail.google.com">Gmail</a></li>
+                <li><a href="https://www.google.co/imghp">Imágenes</a></li>
+                <li>
+                    <a href="https://labs.google.com/search?source=hp&authuser=0">
+                        <button class="icon-btn"><span class="material-symbols-outlined">experiment</span></button>
+                    </a>
+                </li>
+                <li><button class="icon-btn" id="appsBtn"><span class="material-symbols-outlined">apps</span></button></li>
+                <li> <img src="https://i.pinimg.com/474x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg?nii=t" class="profile-icon" id="profileBtn" alt="Perfil"> </li>  
+            </ul>
+        </nav>
+    </header>
+
+    <button class="icon-btn" id="appsBtn" style="visibility: hidden;">
+        <span class="material-symbols-outlined">apps</span>
+    </button>
+
+    <div class="apps-dropdown" id="appsDropdown">
+        <div class="apps-scroll-container">
+            
+            <div class="favorites-section">
+                <div class="dropdown-header">
+                    <span>Your favorites</span>
+                    <button class="edit-btn"><span class="material-symbols-outlined">edit</span></button>
+                </div>
+                <div class="apps-grid">
+                    <a class="app-item"><img src="https://i.pinimg.com/474x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg?nii=t" class="mini-profile"><span>Account</span></a>
+                    <a class="app-item"><img src="https://brandlogo.org/wp-content/uploads/2025/05/Google-G-Icon-2025.png"><span>Search</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/maps_64dp.png"><span>Maps</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/youtube_64dp.png"><span>YouTube</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/play_64dp.png"><span>Play</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/gmail_64dp.png"><span>Gmail</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/news_64dp.png"><span>News</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/meet_64dp.png"><span>Meet</span></a>
+                    <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/chat_64dp.png"><span>Chat</span></a>
+                </div>
+            </div>
+
+            <div class="apps-grid main-grid">
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/drive_64dp.png"><span>Drive</span></a>
+                <a class="app-item"><img src="https://brandlogo.org/wp-content/uploads/2024/06/Gemini-Icon.png"><span>Gemini</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/calendar_64dp.png"><span>Calendar</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/photos_64dp.png"><span>Photos</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/translate_64dp.png"><span>Translate</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/keep_64dp.png"><span>Keep</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/earth_64dp.png"><span>Earth</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/contacts_64dp.png"><span>Contacts</span></a>
+                <a class="app-item"><img src="https://www.gstatic.com/images/branding/product/2x/shopping_64dp.png"><span>Shopping</span></a>
+            </div>
+
+            <div class="more-btn-container">
+                <button class="more-from-google">More from Google</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-dropdown" id="profileDropdown">
+        <div class="profile-header">
+            <span class="user-email">juanesspa76@gmail.com</span>
+            <button class="close-btn" id="closeProfile"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        
+        <div class="profile-main">
+            <div class="profile-pic-large">
+                <img src="https://i.pinimg.com/474x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg?nii=t" alt="Profile">
+                <div class="camera-badge"><span class="material-symbols-outlined">photo_camera</span></div>
+            </div>
+            <h2>Hi, UserRepGithub!</h2>
+            <a href="https://myaccount.google.com/" class="manage-acc-btn">Manage your Google Account</a>
+        </div>
+
+        <div class="accounts-section">
+            <button class="show-accounts">
+                <span>Show more accounts</span>
+                <div class="acc-icons">
+                    <img src="https://i.pinimg.com/474x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg?nii=t" class="mini-pic">
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+            </button>
+        </div>
+
+        <div class="google-search-more">
+            <p class="section-title">More from Google Search</p>
+            <div class="menu-list">
+                <div class="menu-item"><span class="material-symbols-outlined">history</span><span>Search history</span><span class="status">Saving</span></div>
+                <div class="menu-item"><span class="material-symbols-outlined">delete</span><span>Delete last 30 minutes</span></div>
+                <div class="menu-item"><span class="material-symbols-outlined">bookmarks</span><span>Saves & Collections</span></div>
+                <div class="menu-item"><span class="material-symbols-outlined">new_releases</span><span>Search personalization</span></div>
+                <div class="menu-item"><span class="material-symbols-outlined">shield_person</span><span>SafeSearch</span><span class="status">Off</span></div>
+                <div class="menu-item"><span class="material-symbols-outlined">language</span><span>Language</span><span class="status">English</span></div>
+            </div>
+            <div class="menu-footer">
+                <div class="footer-btn"><span class="material-symbols-outlined">settings</span>More settings</div>
+                <div class="footer-btn"><span class="material-symbols-outlined">help</span>Help</div>
+            </div>
+        </div>
+        
+        <div class="profile-legal">
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="Google">
+        </div>
+
+        <div class="search-wrapper">
+            <div class="search-bar">
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input type="text" class="search-input" autofocus>
+                <div class="search-tools">
+                    <span class="material-symbols-outlined tool-icon">mic</span>
+                    <span class="material-symbols-outlined tool-icon">photo_camera</span>
+                    
+                    <button class="ai-mode-btn">
+                        <span class="material-symbols-outlined">auto_awesome</span> 
+                        AI Mode
+                    </button>
+                </div>
+            </div>        
+        </div>
+
+        <div class="button-group">
+            <button class="google-btn">Buscar con Google</button>
+            <a href="https://doodles.google/">
+                <button class="google-btn">Voy a tener suerte</button>
+            </a>
+        </div>
+
+        <p class="lang-offer">Google ofrecido en: <a href="#">Español (Latinoamérica)</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-row top-footer">Colombia</div>
+        <div class="footer-row bottom-footer">
+            <div class="footer-links">
+                <a href="https://about.google/?utm_source=google-co&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+                <a href="https://www.google.co/intl/es-419/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.co&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+                <a href="https://www.google.co/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.co&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+                <a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
+            </div>
+            <div class="footer-links">
+                <a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+                <a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+                <a href="#">Configuración</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="infoModal" class="info-overlay">
+        <div class="info-card">
+            <h2>Learning Project Purpose</h2>
+            <p>
+                This site is a <strong>purely educational environment</strong> designed to explore modern web technologies. 
+                The primary goal is to master <strong>UI Architecture</strong> and <strong>Responsive Layouts</strong> 
+                through hands-on practice.
+            </p>
+            <p>
+                Developed by <strong>StebanCL</strong> using <em>Vibecoding</em> methodologies, this project serves as a 
+                technical benchmark to demonstrate how AI-assisted development can achieve pixel-perfect 
+                design and clean code structures.
+            </p>
+            <p>
+                <strong>Educational Scope:</strong> No commercial use is intended. This is a front-end exercise 
+                focused on visual precision and component logic. All brand assets are used for 
+                contextual learning purposes only.
+            </p>
+            <div class="info-footer">
+                <button class="close-info-btn" onclick="toggleInfo()">Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
